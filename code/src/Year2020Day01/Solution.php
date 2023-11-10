@@ -10,8 +10,8 @@ class Solution extends AbstractSolution {
     public static function solvePartOne(Reader $reader): mixed {
         foreach ($reader->getAsLines() as $line_i) {
             foreach ($reader->getAsLines() as $line_j) {
-                if ($line_i + $line_j === 2020) {
-                    return $line_i * $line_j;
+                if (intval($line_i) + intval($line_j) === 2020) {
+                    return intval($line_i) * intval($line_j);
                 }
             }
         }
@@ -23,8 +23,8 @@ class Solution extends AbstractSolution {
         foreach ($reader->getAsLines() as $line_i) {
             foreach ($reader->getAsLines() as $line_j) {
                 foreach ($reader->getAsLines() as $line_k) {
-                    if ($line_i + $line_j + $line_k === 2020) {
-                        return $line_i * $line_j * $line_k;
+                    if (intval($line_i) + intval($line_j) + intval($line_k) === 2020) {
+                        return intval($line_i) * intval($line_j) * intval($line_k);
                     }
                 }
             }

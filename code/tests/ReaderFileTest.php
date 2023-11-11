@@ -5,7 +5,7 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
 #[CoversClass(Reader::class)]
-final class ReaderTest extends TestCase {
+final class ReaderFileTest extends TestCase {
     private const TEMPORARY_FILENAME = '/tmp/some-file';
 
     protected function tearDown(): void {

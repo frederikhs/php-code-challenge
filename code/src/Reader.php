@@ -18,6 +18,12 @@ class Reader {
         return $this;
     }
 
+    public function readString(string $string): self {
+        $this->contents = $string;
+
+        return $this;
+    }
+
     /** @return array<string> */
     public function getAsLines(string $separator = "\n"): array {
         if (strlen($this->contents) === 0) {
